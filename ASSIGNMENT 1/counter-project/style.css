@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,#075e54,#128c7e,#25d366);
+}
+.counter{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter-container{
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.display {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #128c7e;
+    font-size: 100px;
+    font-size: 10rem;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.input-group input:focus{
+    border-color: #128c7e;
+}
+.button input{
+    font-size: 2rem;
+    color: white;
+    background: #128c7e;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.button input:hover{
+    background: #18b6a3;
+}
+.button{
+    color: white;
+    background: #128c7e;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    border: 1px solid grey;
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+.button:hover{
+    background: #18b6a3;
+}
+.plus-btn{
+    padding: 10px;
+    width: 100px;
+}
+.minus-btn{
+    padding: 10px;
+    width: 100px;
+}
+.count{
+    font-size: 3rem;
+}

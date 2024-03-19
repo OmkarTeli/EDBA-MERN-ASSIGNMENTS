@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/769fd63ea4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="counter">
+        <div class="counter-container">
+          <h1 class="display">0</h1>
+          <div class="button-box">
+            <button class="minus-btn button">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <button class="plus-btn button">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="input-group">
+            <input
+              class="changeBy"
+              type="number"
+              placeholder="Increment/Dcrement By"
+              required
+            />
+          </div>
+          <div class="input-group button reset-btn">
+            <input type="submit" value="RESET" onClick="window.location.reload()"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
