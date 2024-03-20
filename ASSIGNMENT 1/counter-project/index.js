@@ -3,7 +3,7 @@ const minusBtn = document.querySelector('.minus-btn')
 const plusBtn = document.querySelector('.plus-btn')
 const changeBy = document.querySelector('.changeBy')
 const resetBtn = document.querySelector('.reset-btn')
-
+changeBy.value=parseInt(changeBy.value);
 minusBtn.addEventListener('click', () => {
     const countValue = parseInt(count.innerText)
     const changeByValue = parseInt(changeBy.value)

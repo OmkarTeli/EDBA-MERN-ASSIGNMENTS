@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/icon.jpg" type="image/png" />
+    <title>Omkar Teli</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project-card.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- <a href="#" class="logo"><img src="img/icon.jpg" alt=""></a> -->
+      <h1><img src="assets/omkar.png" alt="" class="omkar" /> Portfolio</h1>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="text">
+        <h1>Hii, I'm<span id="st"> Omkar Teli</span></h1>
+        <!-- <h1><span>Looking</span> for <br>Agro products</h1> -->
+        <p>Web Developer | Application Developer | Competitive Coder</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="heading">
+        <span>About Me</span>
+        <h1>Computer Engineer</h1>
+      </div>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="assets/omkar.jpeg" alt="" />
+        </div>
+        <div class="about-text">
+          <!-- <h1 class="sub-title">About me</h1> -->
+          <p>
+            I am currently a final-year Computer Engineering Student at St. John
+            College of Engineering & Management. Skilled in C++, Java
+            Programming, Html, CSS, JavaScript, React, Android.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Design | Adobe XD</li>
+              <li>
+                <span>Web Development</span><br />Html | Css | JavaScript |
+                Node.js | express.js | React.js | MongoDb | Mongoose ODM
+              </li>
+              <li><span>Application Development</span><br />React Native</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>June 2020-August 2020</span><br />Application Developer<br />
+                React Native | FireBase | Adobe XD
+              </li>
+              <!-- <li><span>October 2021-December 2021</span><br />Web Designer</li> -->
+              <li>
+                <!-- <span>December 2022-February 2023</span><br />Web Developer -->
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>June 2018</span><br />SSC</li>
+              <li>
+                <span>June 2018-May 2021</span><br />Diploma in Computer
+                Engineerig
+              </li>
+              <li>
+                <span>July 2021-June 2024</span><br />B.E. Computer Engineering
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section class="service" id="service">
+      <div class="heading">
+        <span>Services</span>
+        <h1>Quality Engineering Services</h1>
+      </div>
+      <div class="service-container">
+        <div class="box">
+          <i class="bx bx-devices"></i>
+          <h2>Application Development</h2>
+          <p>
+            From idea to implementation, I'll be your partner in building
+            powerful applications that stand out in the crowded digital
+            landscape.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="bx bx-code-alt"></i>
+          <h2>Web Development</h2>
+          <p>
+            Dive into the world of web development with me as your guide. I
+            specialize in crafting custom websites that not only look stunning
+            but also function flawlessly across all devices.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="bx bxs-magic-wand"></i>
+          <h2>UI/UX Dedign</h2>
+          <p>
+            Elevate your user experience with my expert UI/UX design services. I
+            understand that great design is more than just aesthetics – it's
+            about creating seamless and intuitive experiences that keep users
+            coming back for more.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="lwcard" id="project">
+      <div class="heading">
+        <span style="color: white; font-weight: 500; text-transform: uppercase"
+          >Projects</span
+        >
+        <h1 style="color: white; font-size: 2rem">
+          Worked on variety of projects
+        </h1>
+      </div>
+      <div class="container">
+        <a href="https://www.raweng.com/miami-heat-case-study" target="_blank">
+          <div class="card">
+            <img src="./assets/Blog-app.png" alt="" />
+            <div class="dec">
+              <h5>Web Development</h5>
+              <h1>BLOG APPLICATION</h1>
+              <i
+                class="fa-solid fa-arrow-right"
+                style="
+                  display: inline;
+                  margin-left: 10px;
+                  color: rgb(0, 105, 217);
+                  margin-top: 4px;
+                "
+              ></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.raweng.com/elastic-case-study" target="_blank">
+          <div class="card">
+            <img src="./assets/sorting-visualizer.png" alt="" />
+            <div class="dec">
+              <h5>Web Development | JavaScript</h5>
+              <h1>SORTING VISUALIZER</h1>
+              <i
+                class="fa-solid fa-arrow-right"
+                style="
+                  display: inline;
+                  margin-left: 10px;
+                  color: rgb(0, 105, 217);
+                  margin-top: 4px;
+                "
+              ></i>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://www.raweng.com/sacramento-kings-case-study"
+          target="_blank"
+          ><div class="card">
+            <img src="./assets/fileflasher-crop.jpg" alt="" />
+            <div class="dec">
+              <h5>Mobile Application</h5>
+              <h1>fileflasher</h1>
+              <i
+                class="fa-solid fa-arrow-right"
+                style="
+                  display: inline;
+                  margin-left: 10px;
+                  color: rgb(0, 105, 217);
+                  margin-top: 4px;
+                "
+              ></i>
+            </div></div
+        ></a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="heading">
+        <span>Contact me.</span>
+        <h1>Get in touch.</h1>
+      </div>
+      <div class="max-width">
+        <div class="contact-content">
+          <div class="column left">
+            <div class="icons">
+              <div class="row">
+                <i class="bx bxs-user-pin"></i>
+                <div class="info">
+                  <div class="head">Name</div>
+                  <div class="head-title">Omkar Teli</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="bx bxl-gmail"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="head-title">omkarteli@gmail.com</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="bx bxs-phone"></i>
+                <div class="info">
+                  <div class="head">Phone</div>
+                  <div class="head-title">+91 1234560987</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="bx bxs-map"></i>
+                <div class="info">
+                  <div class="head">Address</div>
+                  <div class="head-title">Mumbai, Maharashtra</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column right">
+            <div class="text">Message</div>
+            <form action="#">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div class="field email">
+                  <input type="email" placeholder="Email" />
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="subject" />
+              </div>
+              <div class="field textarea">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Description"
+                ></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright" id="contact">
+      <div class="social">
+        <a href="https://www.facebook.com/"
+          ><i class="bx bxl-facebook-square"></i
+        ></a>
+        <a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com/"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://drive.google.com/file/d/1zZ-vDX2EinT9B-KMJZOSYLZ1CGPEOqG7/view?usp=sharing"
+          class="cta"
+          >Download Resume</a
+        >
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
